@@ -1,43 +1,41 @@
-# Publish StudyMate AI on GitHub
+# StudyMate AI on GitHub
 
-The submission copy is a local Git repository. Publication is still pending; no remote repository was created during preparation.
+Repository: https://github.com/TanmayAgarkar/StudyMateAI
 
-## Create an empty repository
+The prepared application, README, tests, and workflow are published on `main`. Environment secrets, dependencies, builds, and backup folders are excluded.
 
-1. Sign in to your GitHub account.
-2. Create a repository named `StudyMateAI`.
-3. Choose visibility appropriate for your assignment. Public allows evaluators to view it without an invitation; private requires inviting them.
-4. Leave automatic README, license, and .gitignore creation unchecked.
-5. Copy the repository HTTPS URL.
-
-## Push the prepared project
-
-Open a terminal inside this submission copy. If you move the folder, use its new path. Run `git status` first to confirm you are in the prepared repository.
+## Work from a fresh clone
 
 ```powershell
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/StudyMateAI.git
-git push -u origin main
+git clone https://github.com/TanmayAgarkar/StudyMateAI.git
+cd StudyMateAI
 ```
 
-Replace `YOUR_USERNAME` with your account name. If origin already exists, inspect `git remote -v` before changing anything. Complete GitHub authentication when prompted. Do not paste a password or token into source files or command history.
+Follow the root README to install dependencies, create your local `server/.env`, and start both processes. Keep your existing D:\StudyMateAI folder until you have verified the clone. The original project folder was not modified by Module 6.
 
-If the local repository has no commit yet, run these before pushing:
+The submission copy was published through the GitHub connector, which created remote commit history independently from its initial local commit. Use a fresh clone for future pushes; do not force-push the older local history.
+
+## Publish future changes
+
+From your fresh clone:
 
 ```powershell
+git status
 git add .
 git diff --cached --name-only
-git commit -m "Prepare StudyMate AI submission"
+git commit -m "Describe your change"
+git push
 ```
 
-The staged list should contain source, tests, lockfiles, documentation, and `.env.example`. It must not contain `.env`, node_modules, dist, backups, or credentials.
+Inspect the staged file list before committing. It should contain source, tests, lockfiles, documentation, and `.env.example`. It must not contain `.env`, node_modules, dist, backups, or credentials.
 
-## Verify after upload
+## Submission checks
 
-- Open the repository and confirm the README displays.
+- Confirm the README displays on GitHub.
 - Confirm `server/.env` is absent.
-- Open the Actions tab and inspect the Checks workflow. Local checks do not prove the hosted workflow has passed.
-- Follow the README setup instructions from a fresh clone.
-- Record your required demo and submit the repository URL.
+- Inspect the Checks workflow in the Actions tab.
+- Follow the README setup steps from a fresh clone.
+- Complete the manual UI checks in UI-REVIEW.md and record the required demo.
+- Submit the repository URL and demo recording.
 
 GitHub Pages alone cannot run this Express backend. Publishing source and deploying a live application are separate steps.

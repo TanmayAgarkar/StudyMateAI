@@ -2,6 +2,8 @@
 
 Turn your study notes into interactive flashcards and a practice quiz using Google Gemini.
 
+Repository: https://github.com/TanmayAgarkar/StudyMateAI
+
 ## Features
 
 - AI-generated flashcards with flip, previous, and next controls.
@@ -150,3 +152,4 @@ The Vite development proxy is configured for `npm run dev`. `npm run preview` pr
 ## Submission
 
 See [GITHUB-SETUP.md](GITHUB-SETUP.md) for publication steps and [UI-REVIEW.md](UI-REVIEW.md) for review status and final checks. Include the repository URL and your required demo recording in your assignment submission. A GitHub repository does not automatically host the working Express backend.
+

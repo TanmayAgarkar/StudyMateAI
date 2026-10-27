@@ -32,7 +32,7 @@ Changes in this copy:
 | Previous Module 5 backend verification | 8 tests passed with local networking access |
 | Final browser preview | Connection timed out |
 | Live Gemini generation | Not run during Module 6 |
-| GitHub hosted CI | Pending publication |
+| GitHub hosted CI | Backend tests, frontend tests, lint, and build passed on the uploaded application commit |
 
 Backend runtime logic is unchanged from Module 5. The local HTTP test failures must not be interpreted as successful verification or as confirmed application bugs.
 
@@ -49,3 +49,8 @@ Run the app from this submission folder using the README. Check:
 7. Confirm no API key or environment file appears in the published repository or demo recording.
 
 Record the demo after completing these checks. The recording itself was not requested or created in this step.
+
+## GitHub publication
+
+The project is published at https://github.com/TanmayAgarkar/StudyMateAI. The application verification run is https://github.com/TanmayAgarkar/StudyMateAI/actions/runs/40521475860. Hosted backend tests passed with normal local networking, resolving the earlier session restriction. The final manual UI walkthrough and live Gemini check remain pending.
+
